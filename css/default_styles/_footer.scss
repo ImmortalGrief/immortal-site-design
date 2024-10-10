@@ -1,0 +1,73 @@
+footer {
+    padding: 30px 3% 30px;
+    background: rgb(var(--objects-color-rgb));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2.2rem;
+    border-radius: 14px;
+    margin: 9px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.footer-pillar {
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    li {
+        margin-bottom: 6px;
+        list-style-type: none;
+        transition: all 0.4s;
+        font-size: 15px;
+    }
+
+    li a {
+        padding: 5px 10px;
+        display: block;
+        text-decoration: none;
+        transition: var(--transition);
+        border-radius: 10px;
+
+        &:hover {
+            transform: translateY(-1px) translateX(-2px);
+            background: rgba(var(--brand-red-rgb));
+        }
+    }
+
+    .material-symbols-outlined {
+        font-size: 16px;
+        top: 3px;
+        left: 3px;
+        position: relative;
+    }
+}
+
+.copyright {
+    max-width: 240px;
+    font-size: 14px;
+}
+
+#vk-btn:hover {
+    background: var(--vk-color);
+}
+
+#tg-btn:hover {
+    background: var(--telegram-color);
+}
+
+#yt-btn:hover {
+    background: var(--youtube-color);
+}
+
+#ds-btn:hover {
+    background: rgb(var(--discord-color));
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 300px) {
+
+}

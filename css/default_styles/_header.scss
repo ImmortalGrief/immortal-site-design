@@ -1,0 +1,124 @@
+header {
+    position: sticky;
+    top: 9px;
+    margin: 9px 9px 14px;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(var(--objects-color-rgb), 0.5);
+    border-radius: 14px;
+    padding: 12px 3%;
+    transition: all 0.7s;
+    z-index: 9999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.active-tab {
+    background: rgb(var(--brand-orange-rgb));
+
+    &:hover {
+        background: rgba(var(--brand-orange-rgb), 0.8) !important;
+    }
+}
+
+#nav-links {
+    display: flex;
+    gap: 5px;
+    font-family: "Unbounded", sans-serif;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        font-weight: 400;
+        font-size: 17px;
+        text-decoration: none;
+        transition: var(--transition);
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        &:hover {
+            //color: var(--skylight-blue);
+            background: rgba(var(--brand-red-rgb), 0.75);
+        }
+    }
+}
+
+#header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#adap-site-header {
+    display: none;
+}
+
+#burger-button {
+    display: none;
+    border-radius: 10px !important;
+    border: 2px solid white;
+    color: var(--text-color);
+    background: transparent;
+    margin-right: 6px;
+
+    span {
+        padding: 4px 8px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #burger-button { display: block; }
+    #nav-bar { display: none; }
+    header { padding: 10px 1%; }
+
+    #adap-site-header {
+        position: absolute;
+        top: 75px;
+        background-color: rgba(27, 24, 24, 0.7);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        filter: var(--default-shadow);
+        width: 98%;
+        padding: 10px;
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        z-index: 200;
+
+        &.active-header {
+            display: block;
+        }
+    }
+
+    #adap-nav-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: "Unbounded", sans-serif;
+
+        li {
+            list-style-type: none;
+            padding: 5px 10px;
+            border-radius: 14px;
+        }
+
+        a {
+            padding-left: 12px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 19px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+                color: var(--skylight-blue);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+}

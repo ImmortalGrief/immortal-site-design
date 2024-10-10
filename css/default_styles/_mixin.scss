@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+
+@mixin elementCenterMargin() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin price($text-color: rgb(var(--brand-orange-rgb)), $font-size: 22px, $text-decor: underline) {
+    font-size: $font-size;
+    font-family: sans-serif; // "Unbounded", sans-serif
+    font-weight: 800;
+    text-decoration: $text-decor;
+    color: $text-color;
+
+    &::after {
+        content: " ₽";
+    }
+
+    &.not-static::before {
+        font-weight: 1000;
+        content: "~ ";
+    }
+}
+
+@mixin onPress() {
+    scale: 0.98 !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    //border: 1px solid var(--text-color) !important;
+}

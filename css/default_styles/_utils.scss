@@ -1,0 +1,66 @@
+.transparent_button {
+    padding: 8px 12px !important;
+    border: 2px solid rgb(var(--brand-red-rgb));
+    background: transparent;
+    border-radius: 12px;
+    transition: var(--transition);
+    outline: none;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid rgba(var(--brand-red-rgb), 0.6);
+    }
+}
+
+.red_button {
+    padding: 8px 12px !important;
+    border: 2px solid rgb(var(--brand-red-rgb));
+    background: rgba(var(--brand-red-rgb), 0.25);
+    border-radius: 12px;
+    transition: var(--transition);
+    outline: none;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid rgba(var(--brand-red-rgb), 0.6);
+        background: rgba(var(--brand-red-rgb), 0.1);
+    }
+}
+
+.orange_button {
+    padding: 8px 12px !important;
+    border-radius: 12px;
+    background: rgb(var(--brand-orange-rgb));
+    transition: var(--transition);
+    outline: none;
+    border: 1px solid transparent;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(var(--brand-orange-rgb), 0.75);
+        box-shadow: 0 0 8px rgba(var(--brand-orange-rgb), 0.75);
+    }
+}
+
+.url {
+
+}
+
+.no-display {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}

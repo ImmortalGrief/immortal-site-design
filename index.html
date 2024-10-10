@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+
+    <div class="container">
+        <div id="box">
+            <header class="site-header">
+                <div id="adap-site-header">
+                    <ul id="adap-nav-links">
+                        <li class="active-tab"><a href="/">Главная</a></li>
+                        <li><a href="">Правила</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src='' alt="server_logo"/></a>
+                <nav id="nav-bar">
+                    <ul id="nav-links">
+                        <li><a class="active-tab" href="">Главная</a></li>
+                        <li><a href="">Правила</a></li>
+                    </ul>
+                </nav>
+                <div id="header-buttons">
+                    <button id="burger-button" onclick="toggleAdapHeader()"><span class="material-symbols-outlined">menu</span></button>
+                </div>
+            </header>
+
+            <main>
+                <div class="bg">
+<!--                    <h1 class="title">ImmortalGrief</h1>-->
+                    <img src="https://cdn.discordapp.com/attachments/968157912843288606/1292427590799327243/image.png?ex=6703b27d&is=670260fd&hm=77cc0d7641aa2b9134746945d9fbd70b6e4ddfc12c643209cfe69327c595c73e&" alt="bg" class="bg-image" />
+                </div>
+                <div class="servers-info">
+                    <div class="info-column">
+                        <p>Immortal #1: ??/??</p>
+                        <p>Immortal #2: ??/??</p>
+                        <p>Общий онлайн: ??/??</p>
+                    </div>
+                    <div class="info-column">
+                        <button class="ip-button" onclick="copyIP()">IP: 54.36.232.14:25883</button>
+                    </div>
+                </div>
+                <h2 class="chapter">Наши товары:</h2>
+                <div class="sort-panel">
+                    <div class="option">Весь товар</div>
+                    <div class="option">Привилегии</div>
+                    <div class="option">Кейсы</div>
+                    <div class="option">Спавнера</div>
+                </div>
+                <ul class="product-list">
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="vip_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">VIP</h3>
+                            <p class="product-price">29</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="premium_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">PREMIUM</h3>
+                            <p class="product-price">119</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="hero_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">HERO</h3>
+                            <p class="product-price">249</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="legend_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">LEGEND</h3>
+                            <p class="product-price">379</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="elite_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">ELITE</h3>
+                            <p class="product-price">599</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="deluxe_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">DELUXE</h3>
+                            <p class="product-price">1.099</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product donat">
+                        <img src="./img/png/server.png" class="product-img" alt="prime_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">PRIME</h3>
+                            <p class="product-price">2.399</p>
+                            <p class="product-type no-display">donate</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product case">
+                        <img src="./img/png/server.png" class="product-img" alt="case_icon" />
+                        <div class="product-info">
+                            <h3 class="product-name">Кейс с вещами</h3>
+                            <p class="product-price">1.000</p>
+                            <p class="product-type no-display">case</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product spawner">
+                        <img src="./img/png/server.png" class="product-img" alt="" />
+                        <div class="product-info">
+                            <h3 class="product-name">спавнер криперов</h3>
+                            <p class="product-price">2.000</p>
+                            <p class="product-type no-display">spawner</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product spawner discount-product">
+                        <img src="./img/png/server.png" class="product-img" alt="" />
+                        <div class="product-info">
+                            <h3 class="product-name">спавнер гастов</h3>
+                            <div class="discount-price">
+                                <p class="new-price">1.299</p>
+                                <p class="old-price">2.000</p>
+                            </div>
+                            <p class="product-type no-display">spawner</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product spawner">
+                        <img src="./img/png/server.png" class="product-img" alt="" />
+                        <div class="product-info">
+                            <h3 class="product-name">спавнер зомби</h3>
+                            <p class="product-price">2.000</p>
+                            <p class="product-type no-display">spawner</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                    <li class="product spawner">
+                        <img src="./img/png/server.png" class="product-img" alt="" />
+                        <div class="product-info">
+                            <h3 class="product-name">спавнер пауков</h3>
+                            <p class="product-price">2.000</p>
+                            <p class="product-type no-display">spawner</p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="red_button">О товаре</button>
+                            <button class="transparent_button">Купить</button>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+
+            <footer>
+                <ul class="footer-pillar">
+                    <a href=""><img height="50" width="280" src="" alt="server_logo"/></a>
+                    <p class="copyright">© 2024 ImmortalGrief — Все права защищены. ImmortalGrief не связан с MojangAB, все средства идут на развитие проекта.</p>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Ссылки</h3>
+                    <li class="footer-param"><a id="vk-btn" href="">VK</a></li>
+                    <li class="footer-param"><a id="tg-btn" href="">Telegram</a></li>
+                    <li class="footer-param"><a id="yt-btn" href="">YouTube</a></li>
+                    <li class="footer-param"><a id="ds-btn" href="">Discord</a></li>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Связь</h3>
+                    <li class="footer-param"><span onclick="">mail@gmail.com</span><span class="material-symbols-outlined">content_copy</span></li>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Колонна</h3>
+                    <li class="footer-param"><a href="">Аферта</a></li>
+                    <li class="footer-param"><a href="">Аферта</a></li>
+                    <li class="footer-param"><a href="">Аферта</a></li>
+                    <br/>
+                    <li class="footer-param">ИНН: 1212111121</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function toggleAdapHeader() {
+            let adap_header = document.getElementById('adap-site-header')
+            if (adap_header) { adap_header.classList.toggle("active-header") }
+        }
+
+        function copyIP() {
+            navigator.clipboard.writeText("54.36.232.14:25883");
+            alert("IP скопирован")
+        }
+    </script>
+
+    </body>
+</html>
