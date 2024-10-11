@@ -138,11 +138,6 @@
                     rgba(var(--site-bg-rgb), 0.15),
                     rgba(var(--brand-orange-rgb), 0.15)
     ) !important;
-
-
-    &:hover {
-
-    }
 }
 
 .product-img {
@@ -252,6 +247,15 @@
 
     .option {
         font-size: 17px;
+    }
+
+    .discount-product {
+        background: linear-gradient(
+                        325deg,
+                        rgba(var(--brand-red-rgb), 0.25),
+                        rgba(var(--site-bg-rgb), 0.25),
+                        rgba(var(--brand-orange-rgb), 0.25)
+        ) !important;
     }
 }
 
