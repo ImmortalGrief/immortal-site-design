@@ -105,30 +105,9 @@
   box-shadow: 0px 0px 20px rgba(var(--brand-red-rgb), 0.3);
 }
 
-.discount-product {
-  border: 2px solid rgba(var(--discord-color), 0.5) !important;
-  box-shadow: 0px 0px 10px rgba(var(--discord-color), 0.5) !important;
-}
-.discount-product:hover {
-  border: 2px solid rgba(var(--discord-color), 1) !important;
-  box-shadow: 0px 0px 40px rgba(var(--discord-color), 0.5) !important;
-}
 .discount-product .transparent_button {
-  border: 2px solid rgb(var(--discord-color));
   background: transparent;
 }
-.discount-product .transparent_button:hover {
-  border: 2px solid rgba(var(--discord-color), 0.6);
-}
-.discount-product .red_button {
-  border: 2px solid rgb(var(--discord-color));
-  background: rgba(var(--discord-color), 0.25);
-}
-.discount-product .red_button:hover {
-  border: 2px solid rgba(var(--discord-color), 0.6);
-  background: rgba(var(--discord-color), 0.1);
-}
-
 .product-img {
   transition: all 0.7s;
   object-fit: cover;
@@ -177,7 +156,7 @@
   font-family: sans-serif;
   font-weight: 800;
   text-decoration: underline;
-  color: rgb(var(--discord-color));
+  color: rgb(var(--brand-orange-rgb));
 }
 .new-price::after {
   content: " ₽";
@@ -232,6 +211,9 @@
 }
 
 @media (max-width: 767px) {
+  .product-list {
+    gap: 15px;
+  }
   .product-name {
     font-size: 28px;
   }
@@ -262,7 +244,7 @@
     font-family: sans-serif;
     font-weight: 800;
     text-decoration: underline;
-    color: rgb(var(--discord-color));
+    color: rgb(var(--brand-orange-rgb));
   }
   .new-price::after {
     content: " ₽";

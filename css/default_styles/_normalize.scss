@@ -17,7 +17,7 @@ html, body {
     scroll-behavior: smooth;
     scroll-padding-top: 40px;
     line-height: 1.4;
-    background-color: var(--site-bg);
+    background-color: rgb(var(--site-bg-rgb));
     color: var(--text-color);
 }
 

@@ -19,7 +19,7 @@ html, body {
   scroll-behavior: smooth;
   scroll-padding-top: 40px;
   line-height: 1.4;
-  background-color: var(--site-bg);
+  background-color: rgb(var(--site-bg-rgb));
   color: var(--text-color);
 }
 
@@ -354,7 +354,7 @@ header {
   --youtube-color: #ff0000;
   --discord-color: 88, 101, 242;
   --text-color: #fff;
-  --site-bg: #120e0f;
+  --site-bg-rgb: 18, 14, 15;
   --objects-color-rgb: 27, 24, 24;
   --brand-orange-rgb: 255, 136, 0;
   --brand-red-rgb: 179, 10, 10;
