@@ -7,7 +7,7 @@
     margin-right: auto;
 }
 
-@mixin price($text-color: rgb(var(--brand-orange-rgb)), $font-size: 22px, $text-decor: underline) {
+@mixin price($text-color: rgb(var(--brand-orange-rgb)), $font-size: 22px, $text-decor: none) {
     font-size: $font-size;
     font-family: sans-serif; // "Unbounded", sans-serif
     font-weight: 800;

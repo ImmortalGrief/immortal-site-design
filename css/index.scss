@@ -132,25 +132,16 @@
 }
 
 .discount-product {
-    
+    background: linear-gradient(
+                    325deg,
+                    rgba(var(--brand-red-rgb), 0.15),
+                    rgba(var(--site-bg-rgb), 0.15),
+                    rgba(var(--brand-orange-rgb), 0.15)
+    ) !important;
+
 
     &:hover {
 
-    }
-
-    & .transparent_button {
-        background: transparent;
-
-        &:hover {
-
-        }
-    }
-
-    & .red_button {
-
-        &:hover {
-
-        }
     }
 }
 
@@ -187,7 +178,10 @@
 }
 
 .new-price {
-    @include price(rgb(var(--brand-orange-rgb)))
+    background: -webkit-linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include price()
 }
 
 .old-price {

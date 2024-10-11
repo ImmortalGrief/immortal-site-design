@@ -105,8 +105,8 @@
   box-shadow: 0px 0px 20px rgba(var(--brand-red-rgb), 0.3);
 }
 
-.discount-product .transparent_button {
-  background: transparent;
+.discount-product {
+  background: linear-gradient(325deg, rgba(var(--brand-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--brand-orange-rgb), 0.15)) !important;
 }
 .product-img {
   transition: all 0.7s;
@@ -140,7 +140,7 @@
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 800;
-  text-decoration: underline;
+  text-decoration: none;
   color: rgb(var(--brand-orange-rgb));
 }
 .product-price::after {
@@ -152,10 +152,13 @@
 }
 
 .new-price {
+  background: -webkit-linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 800;
-  text-decoration: underline;
+  text-decoration: none;
   color: rgb(var(--brand-orange-rgb));
 }
 .new-price::after {
