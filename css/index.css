@@ -11,6 +11,7 @@
 .bg-image {
   border-radius: 20px;
   width: 100%;
+  box-shadow: 0px 10px 1px -1px rgb(237, 48, 15);
 }
 
 .chapter {
@@ -48,6 +49,20 @@
   background: rgba(var(--brand-red-rgb), 0.8);
 }
 
+#search-input {
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  color: var(--text-color);
+  background: rgba(var(--objects-color-rgb));
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  justify-content: center;
+  font-family: "Unbounded", sans-serif;
+  border: 2px solid rgb(var(--brand-red-rgb));
+}
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
@@ -64,7 +79,6 @@
   border-radius: 20px;
   border: 2px solid rgba(var(--brand-red-rgb), 0.24);
   transition: all 0.7s;
-  overflow: hidden;
 }
 .product .product-buttons {
   display: flex;
@@ -79,10 +93,12 @@
 .product:hover {
   border: 2px solid rgba(var(--brand-red-rgb), 0.8);
   box-shadow: 0px 0px 20px rgba(var(--brand-red-rgb), 0.3);
+  transform: scale(1.01);
 }
 
 .donat {
   border: 2px solid rgba(var(--brand-orange-rgb), 0.24);
+  background: linear-gradient(325deg, rgba(var(--brand-orange-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15)) !important;
 }
 .donat:hover {
   border: 2px solid rgba(var(--brand-orange-rgb), 0.8);
@@ -91,6 +107,7 @@
 
 .case {
   border: 2px solid rgba(var(--brand-pale-red-rgb), 0.24);
+  background: linear-gradient(325deg, rgba(var(--brand-pale-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15)) !important;
 }
 .case:hover {
   border: 2px solid rgba(var(--brand-pale-red-rgb), 0.8);
@@ -99,6 +116,7 @@
 
 .spawner {
   border: 2px solid rgba(var(--brand-red-rgb), 0.24);
+  background: linear-gradient(325deg, rgba(var(--brand-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15)) !important;
 }
 .spawner:hover {
   border: 2px solid rgba(var(--brand-red-rgb), 0.8);
@@ -106,7 +124,25 @@
 }
 
 .discount-product {
-  background: linear-gradient(325deg, rgba(var(--brand-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--brand-orange-rgb), 0.15)) !important;
+  box-shadow: 0px 0px 35px rgba(var(--brand-red-rgb), 0.3);
+  border: 2px solid rgba(var(--brand-red-rgb), 0.5);
+  background: linear-gradient(295deg, rgba(var(--brand-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--brand-orange-rgb), 0.15)) !important;
+}
+.discount-product::before {
+  content: "CКИДКА";
+  position: absolute;
+  background: rgba(var(--brand-red-rgb), 0.5);
+  padding: 7px 20px;
+  z-index: 2222;
+  backdrop-filter: blur(3px);
+  border-radius: 14px;
+  font-family: "Unbounded", sans-serif;
+  margin-left: 75px;
+  margin-top: -13px;
+}
+.discount-product:hover {
+  border: 2px solid rgba(var(--brand-red-rgb), 0.8);
+  box-shadow: 0px 0px 50px rgba(var(--brand-red-rgb), 0.3);
 }
 
 .product-img {
@@ -188,7 +224,7 @@
 
 .servers-info {
   z-index: 999;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
@@ -208,7 +244,7 @@
 
 .ip-button {
   padding: 10px 20px;
-  border-radius: 18px;
+  border-radius: 15px;
   border: 0px solid transparent;
   background: linear-gradient(145deg, rgb(var(--brand-red-rgb)), rgb(var(--brand-orange-rgb)));
   cursor: pointer;
@@ -233,7 +269,7 @@
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 800;
-    text-decoration: underline;
+    text-decoration: none;
     color: rgb(var(--brand-orange-rgb));
   }
   .product-price::after {
@@ -247,7 +283,7 @@
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 800;
-    text-decoration: underline;
+    text-decoration: none;
     color: rgb(var(--brand-orange-rgb));
   }
   .new-price::after {
@@ -289,31 +325,9 @@
   }
   .product-price, .new-price {
     font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 800;
-    text-decoration: underline;
-    color: rgb(var(--brand-orange-rgb));
-  }
-  .product-price::after, .new-price::after {
-    content: " ₽";
-  }
-  .product-price.not-static::before, .new-price.not-static::before {
-    font-weight: 1000;
-    content: "~ ";
   }
   .old-price {
     font-size: 13px;
-    font-family: sans-serif;
-    font-weight: 800;
-    text-decoration: line-through;
-    color: rgb(var(--brand-red-rgb));
-  }
-  .old-price::after {
-    content: " ₽";
-  }
-  .old-price.not-static::before {
-    font-weight: 1000;
-    content: "~ ";
   }
   .product-list {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

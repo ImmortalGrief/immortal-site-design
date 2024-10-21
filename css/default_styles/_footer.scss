@@ -1,6 +1,12 @@
 footer {
     padding: 30px 3% 30px;
-    background: rgb(var(--objects-color-rgb));
+    //background: rgb(var(--objects-color-rgb));
+    background: linear-gradient(
+                    325deg,
+                    rgba(var(--brand-pale-red-rgb), 0.25),
+                    //rgba(var(--site-bg-rgb), 0.25),
+                    rgba(var(--brand-pale-orange-rgb), 0.25)
+    ) !important;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 2.2rem;
@@ -12,7 +18,8 @@ footer {
 .footer-pillar {
     h3 {
         margin-bottom: 1rem;
-        font-size: 20px;
+        font-family: "Unbounded", sans-serif;
+        font-size: 18px;
     }
 
     li {
@@ -62,6 +69,10 @@ footer {
 
 #ds-btn:hover {
     background: rgb(var(--discord-color));
+}
+
+#da-btn:hover {
+    background: rgb(var(--donation-alerts-color));
 }
 
 @media (max-width: 767px) {

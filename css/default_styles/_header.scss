@@ -16,10 +16,10 @@ header {
 }
 
 .active-tab {
-    background: rgb(var(--brand-orange-rgb));
+    background: rgb(var(--brand-orange-rgb), 0.7);
 
     &:hover {
-        background: rgba(var(--brand-orange-rgb), 0.8) !important;
+        background: rgba(var(--brand-orange-rgb), 0.55) !important;
     }
 }
 
@@ -42,7 +42,7 @@ header {
 
         &:hover {
             //color: var(--skylight-blue);
-            background: rgba(var(--brand-red-rgb), 0.75);
+            background: rgba(var(--brand-red-rgb), 0.55);
         }
     }
 }
