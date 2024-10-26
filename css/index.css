@@ -24,29 +24,55 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background: linear-gradient(150deg, rgba(var(--brand-red-rgb), 0.7), rgba(var(--objects-color-rgb), 0.7), rgba(var(--objects-color-rgb), 0.7), rgba(var(--brand-orange-rgb), 0.7));
-  padding: 5px;
+  background: transparent;
   margin-bottom: 15px;
-  border-radius: 14px;
   justify-content: center;
-  gap: 35px;
+  gap: 25px;
   font-family: "Unbounded", sans-serif;
 }
 
 .option {
-  font-weight: 400;
-  font-size: 20px;
+  flex: 1;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 14px;
   transition: var(--transition);
+  background: rgb(var(--objects-color-rgb));
 }
 .option:active {
   scale: 0.98 !important;
   background: rgba(0, 0, 0, 0.5) !important;
 }
-.option:hover {
-  background: rgba(var(--brand-red-rgb), 0.8);
+
+.option-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 156px;
+  height: 156px;
+  margin-bottom: 12px;
+  border-radius: 28px;
+}
+
+.option-name {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.all-products:hover {
+  background: rgba(var(--brand-pale-red-rgb), 0.65) !important;
+}
+
+.cases:hover {
+  background: rgba(var(--brand-pale-orange-rgb), 0.65) !important;
+}
+
+.preferences:hover {
+  background: rgba(var(--skylight-blue-rgb), 0.65) !important;
+}
+
+.spawners:hover {
+  background: rgba(106, 33, 239, 0.65) !important;
 }
 
 #search-input {
@@ -98,7 +124,6 @@
 
 .donat {
   border: 2px solid rgba(var(--brand-orange-rgb), 0.24);
-  background: linear-gradient(325deg, rgba(var(--brand-orange-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15)) !important;
 }
 .donat:hover {
   border: 2px solid rgba(var(--brand-orange-rgb), 0.8);
@@ -107,7 +132,6 @@
 
 .case {
   border: 2px solid rgba(var(--brand-pale-red-rgb), 0.24);
-  background: linear-gradient(325deg, rgba(var(--brand-pale-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15)) !important;
 }
 .case:hover {
   border: 2px solid rgba(var(--brand-pale-red-rgb), 0.8);
@@ -116,7 +140,6 @@
 
 .spawner {
   border: 2px solid rgba(var(--brand-red-rgb), 0.24);
-  background: linear-gradient(325deg, rgba(var(--brand-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15)) !important;
 }
 .spawner:hover {
   border: 2px solid rgba(var(--brand-red-rgb), 0.8);
