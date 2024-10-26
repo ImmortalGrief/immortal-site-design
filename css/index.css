@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   width: 100%;
   background: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   justify-content: center;
   gap: 25px;
   font-family: "Unbounded", sans-serif;
@@ -38,10 +38,6 @@
   border-radius: 14px;
   transition: var(--transition);
   background: rgb(var(--objects-color-rgb));
-}
-.option:active {
-  scale: 0.98 !important;
-  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .option-img {
@@ -212,7 +208,7 @@
 }
 
 .new-price {
-  background: -webkit-linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
+  background: linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 22px;
@@ -338,6 +334,14 @@
   }
 }
 @media (max-width: 660px) {
+  .option-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 25px;
+  }
+  .option-name {
+    font-size: 14px;
+  }
   .sort-panel {
     gap: 18px;
   }

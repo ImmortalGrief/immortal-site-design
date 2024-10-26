@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     width: 100%;
     background: transparent;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     justify-content: center;
     gap: 25px;
     font-family: "Unbounded", sans-serif;
@@ -55,10 +55,6 @@
     border-radius: 14px;
     transition: var(--transition);
     background: rgb(var(--objects-color-rgb));
-
-    &:active {
-        @include onPress;
-    }
 }
 
 .option-img {
@@ -230,7 +226,7 @@
 }
 
 .new-price {
-    background: -webkit-linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
+    background: linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include price()
@@ -308,15 +304,25 @@
 
     .discount-product {
         background: linear-gradient(
-                        325deg,
-                        rgba(var(--brand-red-rgb), 0.25),
-                        rgba(var(--site-bg-rgb), 0.25),
-                        rgba(var(--brand-orange-rgb), 0.25)
+                    325deg,
+                    rgba(var(--brand-red-rgb), 0.25),
+                    rgba(var(--site-bg-rgb), 0.25),
+                    rgba(var(--brand-orange-rgb), 0.25)
         ) !important;
     }
 }
 
 @media (max-width: 660px) {
+    .option-img {
+        width: 96px;
+        height: 96px;
+        border-radius: 25px;
+    }
+
+    .option-name {
+        font-size: 14px;
+    }
+
     .sort-panel {
         gap: 18px;
     }
