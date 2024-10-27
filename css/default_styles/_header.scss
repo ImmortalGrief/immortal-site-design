@@ -98,18 +98,14 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         font-family: "Unbounded", sans-serif;
+        gap: 10px;
 
-        li {
+        a {
+            font-size: 19px;
+            width: 100%;
             list-style-type: none;
             padding: 5px 10px;
             border-radius: 14px;
-        }
-
-        a {
-            padding-left: 12px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            font-size: 19px;
 
             &:hover {
                 background-color: rgba(0, 0, 0, 0.3);

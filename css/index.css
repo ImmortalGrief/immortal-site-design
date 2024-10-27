@@ -55,20 +55,32 @@
   font-size: 20px;
 }
 
+.all-products.active-option {
+  background: rgba(var(--skylight-blue-rgb), 0.75) !important;
+}
 .all-products:hover {
-  background: rgba(var(--brand-pale-red-rgb), 0.65) !important;
+  background: rgba(var(--skylight-blue-rgb), 0.65) !important;
 }
 
+.cases.active-option {
+  background: rgba(var(--brand-pale-orange-rgb), 0.75) !important;
+}
 .cases:hover {
   background: rgba(var(--brand-pale-orange-rgb), 0.65) !important;
 }
 
+.preferences.active-option {
+  background: rgba(var(--brand-pale-red-rgb), 0.75) !important;
+}
 .preferences:hover {
-  background: rgba(var(--skylight-blue-rgb), 0.65) !important;
+  background: rgba(var(--brand-pale-red-rgb), 0.65) !important;
 }
 
+.spawners.active-option {
+  background: rgba(var(--purple-rgb), 0.75) !important;
+}
 .spawners:hover {
-  background: rgba(106, 33, 239, 0.65) !important;
+  background: rgba(var(--purple-rgb), 0.65) !important;
 }
 
 #search-input {
@@ -87,9 +99,9 @@
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
   justify-content: center;
-  gap: 25px;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
@@ -118,46 +130,10 @@
   transform: scale(1.01);
 }
 
-.donat {
-  border: 2px solid rgba(var(--brand-orange-rgb), 0.24);
-}
-.donat:hover {
-  border: 2px solid rgba(var(--brand-orange-rgb), 0.8);
-  box-shadow: 0px 0px 20px rgba(var(--brand-orange-rgb), 0.3);
-}
-
-.case {
-  border: 2px solid rgba(var(--brand-pale-red-rgb), 0.24);
-}
-.case:hover {
-  border: 2px solid rgba(var(--brand-pale-red-rgb), 0.8);
-  box-shadow: 0px 0px 20px rgba(var(--brand-pale-red-rgb), 0.3);
-}
-
-.spawner {
-  border: 2px solid rgba(var(--brand-red-rgb), 0.24);
-}
-.spawner:hover {
-  border: 2px solid rgba(var(--brand-red-rgb), 0.8);
-  box-shadow: 0px 0px 20px rgba(var(--brand-red-rgb), 0.3);
-}
-
 .discount-product {
   box-shadow: 0px 0px 35px rgba(var(--brand-red-rgb), 0.3);
   border: 2px solid rgba(var(--brand-red-rgb), 0.5);
   background: linear-gradient(295deg, rgba(var(--brand-red-rgb), 0.15), rgba(var(--site-bg-rgb), 0.15), rgba(var(--brand-orange-rgb), 0.15)) !important;
-}
-.discount-product::before {
-  content: "CКИДКА";
-  position: absolute;
-  background: rgba(var(--brand-red-rgb), 0.5);
-  padding: 7px 20px;
-  z-index: 2222;
-  backdrop-filter: blur(3px);
-  border-radius: 14px;
-  font-family: "Unbounded", sans-serif;
-  margin-left: 75px;
-  margin-top: -13px;
 }
 .discount-product:hover {
   border: 2px solid rgba(var(--brand-red-rgb), 0.8);
@@ -271,7 +247,7 @@
 
 @media (max-width: 767px) {
   .product-list {
-    gap: 15px;
+    gap: 8px;
   }
   .product-name {
     font-size: 28px;
