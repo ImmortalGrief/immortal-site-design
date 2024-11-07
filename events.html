@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>Events</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/events_page.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+
+    <div class="container">
+        <div id="box">
+            <header class="site-header">
+                <div id="adap-site-header">
+                    <ul id="adap-nav-links">
+                        <a href="./index.html">Главная</a>
+                        <a href="./rules.html">Правила</a>
+                        <a class="active-tab" href="./events.html">Ивенты</a>
+                    </ul>
+                </div>
+                <a href=""><img src='' alt="server_logo"/></a>
+                <nav id="nav-bar">
+                    <ul id="nav-links">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./rules.html">Правила</a></li>
+                        <li><a class="active-tab" href="./events.html">Ивенты</a></li>
+                    </ul>
+                </nav>
+                <div id="header-buttons">
+                    <button class="ip-button" onclick="copyIP()"><span id="ip">IP</span><span id="server-ip"> mc.immortalgrief.pro</span></button>
+<!--                    <details class="lang-menu">-->
+<!--                        <summary class="lang-menu-title">Язык</summary>-->
+<!--                        <div class="lang-menu-langs">-->
+<!--                            <button class="lang-menu-btn">English</button>-->
+<!--                            <button class="lang-menu-btn">Русский</button>-->
+<!--                        </div>-->
+<!--                    </details>-->
+                    <button id="burger-button" onclick="toggleAdapHeader()"><span class="material-symbols-outlined">menu</span></button>
+                </div>
+            </header>
+
+            <main>
+                <div class="blured-img">
+                    <img src="./img/png/events.jpg" alt="bg" class="base-image" />
+                    <img src="./img/png/events.jpg" alt="blur-img" class="image-blured" />
+                </div>
+                <ul class="events-list">
+                    <li class="event"><a href="">
+                        <h3 class="event-name">Незер-плита</h3>
+                        <img class="event-img" src="./img/png/nether_plate.png" alt="event-img">
+                    </a></li>
+                    <li class="event"><a href="">
+                        <h3 class="event-name">Гриф поршнями</h3>
+                        <img class="event-img" src="./img/png/nether_plate.png" alt="event-img">
+                    </a></li>
+                    <li class="event"><a href="">
+                        <h3 class="event-name">Сундук Иммортала</h3>
+                        <img class="event-img" src="./img/png/nether_plate.png" alt="event-img">
+                    </a></li>
+                </ul>
+            </main>
+
+            <footer>
+                <ul class="footer-pillar">
+                    <a href=""><img height="50" width="280" src="" alt="server_logo"/></a>
+                    <p class="copyright">© 2024 ImmortalGrief — Все права защищены. ImmortalGrief не связан с MojangAB, все средства идут на развитие проекта.</p>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Ссылки</h3>
+                    <li class="footer-param"><a id="vk-btn" href="">VK</a></li>
+                    <li class="footer-param"><a id="tg-btn" href="">Telegram</a></li>
+                    <li class="footer-param"><a id="yt-btn" href="">YouTube</a></li>
+                    <li class="footer-param"><a id="ds-btn" href="">Discord</a></li>
+                    <li class="footer-param"><a id="da-btn" href="">DonationAlerts</a></li>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Связь</h3>
+                    <li class="footer-param"><span onclick="">mail@gmail.com</span><span class="material-symbols-outlined">content_copy</span></li>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Колонна</h3>
+                    <li class="footer-param"><a href="">Аферта</a></li>
+                    <li class="footer-param"><a href="">Аферта</a></li>
+                    <li class="footer-param"><a href="">Аферта</a></li>
+                    <br/>
+                    <li class="footer-param">ИНН: 1212111121</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+
+    </body>
+</html>

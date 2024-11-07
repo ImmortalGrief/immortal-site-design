@@ -1,11 +1,9 @@
 footer {
     padding: 30px 3% 30px;
-    //background: rgb(var(--objects-color-rgb));
     background: linear-gradient(
                     325deg,
-                    rgba(var(--brand-pale-red-rgb), 0.25),
-                    //rgba(var(--site-bg-rgb), 0.25),
-                    rgba(var(--brand-pale-orange-rgb), 0.25)
+                    rgba(var(--brand-red-rgb), 0.25),
+                    rgba(var(--brand-orange-rgb), 0.25)
     ) !important;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));

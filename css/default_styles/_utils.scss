@@ -64,3 +64,66 @@
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
 }
+
+.stat-info {
+    border-radius: 10px !important;
+    border: 2px solid rgba(var(--brand-red-rgb), 1);
+    overflow: hidden;
+    padding: .4rem .4rem 0;
+    background: linear-gradient(135deg, rgb(var(--brand-red-rgb), 0.35), rgb(var(--brand-dark-red-rgb), 0.35));
+    z-index: 110;
+
+    summary {
+        background-color: rgba(var(--brand-red-rgb), 1);
+        color: white;
+        font-size: 18px;
+        margin: -.4rem -.4rem 0;
+        padding: .4rem .7rem;
+        border-radius: 0 !important;
+        transition: background-color 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(var(--brand-dark-red-rgb), 1);
+        }
+    }
+}
+.stat-info[open] {
+    padding: 0.4rem;
+
+    summary {
+        margin-bottom: 8px;
+    }
+}
+
+$bg-img-border-radius: 20px;
+
+.blured-img {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.base-image {
+    position: relative;
+    width: 100%;
+    border-radius: $bg-img-border-radius;
+    z-index: 5;
+}
+
+.image-blured {
+    width: 100%;
+    position: absolute;
+    filter: blur(50px);
+    border-radius: $bg-img-border-radius;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@media (max-width: 767px) {
+    .stat-info summary {
+        font-size: 15px;
+    }
+}

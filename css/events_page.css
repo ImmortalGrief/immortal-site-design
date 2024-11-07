@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+.blured-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 87%;
+}
+
+.events-list {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(361px, auto));
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  width: 87%;
+  z-index: 222;
+}
+
+.event {
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.event:hover .event-img {
+  transform: scale(1.06);
+  opacity: 0.8;
+}
+
+.event-name {
+  position: absolute;
+  padding: 11px 19px;
+  margin-top: 4px;
+  margin-left: 4px;
+  z-index: 111;
+  font-family: "Unbounded", sans-serif;
+  background: rgba(0, 0, 0, 0.27);
+  border-radius: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.event-img {
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+  opacity: 0.45;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .blured-img {
+    margin: 0;
+    width: 100%;
+  }
+  .events-list {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=events_page.css.map */

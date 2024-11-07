@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -16,37 +16,43 @@
             <header class="site-header">
                 <div id="adap-site-header">
                     <ul id="adap-nav-links">
-                        <a class="active-tab" href="/">Главная</a>
-                        <a href="">Правила</a>
+                        <a class="active-tab" href="./index.html">Главная</a>
+                        <a href="./rules.html">Правила</a>
+                        <a href="./events.html">Ивенты</a>
                     </ul>
                 </div>
                 <a href=""><img src='' alt="server_logo"/></a>
                 <nav id="nav-bar">
                     <ul id="nav-links">
-                        <li><a class="active-tab" href="">Главная</a></li>
-                        <li><a href="">Правила</a></li>
+                        <li><a class="active-tab" href="./index.html">Главная</a></li>
+                        <li><a href="./rules.html">Правила</a></li>
+                        <li><a href="./events.html">Ивенты</a></li>
                     </ul>
                 </nav>
                 <div id="header-buttons">
+                    <button class="ip-button" onclick="copyIP()"><span id="ip">IP</span><span id="server-ip"> mc.immortalgrief.pro</span></button>
+<!--                    <details class="lang-menu">-->
+<!--                        <summary class="lang-menu-title">Язык</summary>-->
+<!--                        <div class="lang-menu-langs">-->
+<!--                            <button class="lang-menu-btn">English</button>-->
+<!--                            <button class="lang-menu-btn">Русский</button>-->
+<!--                        </div>-->
+<!--                    </details>-->
                     <button id="burger-button" onclick="toggleAdapHeader()"><span class="material-symbols-outlined">menu</span></button>
                 </div>
             </header>
 
             <main>
-                <div class="bg">
-<!--                    <h1 class="title">ImmortalGrief</h1>-->
-                    <img src="./img/png/site-image.png" alt="bg" class="bg-image" />
+                <div class="blured-img">
+                    <img src="./img/png/banner.jpg" alt="bg" class="base-image" />
+                    <img src="./img/png/banner.jpg" alt="blur-img" class="image-blured" />
                 </div>
-                <div class="servers-info">
-                    <div class="info-column">
-                        <p>Immortal #1: 1/180</p>
-                        <p>Immortal #2: 0/180</p>
-                        <p>Общий онлайн: 1/360</p>
-                    </div>
-                    <div class="info-column">
-                        <button class="ip-button" onclick="copyIP()">IP: 54.36.232.14:25883</button>
-                    </div>
-                </div>
+                <details class="stat-info">
+                    <summary>Статистика онлайна</summary>
+                    <p class="server-online">Immortal #1: 1<span>/</span>180</p>
+                    <p class="server-online">Immortal #2: 0<span>/</span>180</p>
+                    <p class="total-server-online">Общий онлайн: 1<span>/</span>360</p>
+                </details>
                 <h2 class="chapter">Наши товары:</h2>
                 <div class="sort-panel">
                     <div class="option all-products active-option">
@@ -66,7 +72,7 @@
                     </div>
                 </div>
                 <ul class="product-list">
-                    <li class="product donat">
+                    <li class="product">
                         <img src="./img/png/server.png" class="product-img" alt="vip_icon" />
                         <div class="product-info">
                             <h3 class="product-name">VIP</h3>
@@ -74,8 +80,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -86,8 +92,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -98,8 +104,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -110,8 +116,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -122,8 +128,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -134,8 +140,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -146,8 +152,8 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -158,8 +164,8 @@
                             <p class="product-type no-display">case</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -170,8 +176,8 @@
                             <p class="product-type no-display">spawner</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product discount-product">
@@ -185,8 +191,8 @@
                             <p class="product-type no-display">spawner</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -197,8 +203,8 @@
                             <p class="product-type no-display">spawner</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -209,8 +215,8 @@
                             <p class="product-type no-display">spawner</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">О товаре</button>
-                            <button class="transparent_button">Купить</button>
+                            <button class="red_button">Посмотреть</button>
+<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                 </ul>
@@ -245,17 +251,7 @@
         </div>
     </div>
 
-    <script>
-        function toggleAdapHeader() {
-            let adap_header = document.getElementById('adap-site-header')
-            if (adap_header) { adap_header.classList.toggle("active-header") }
-        }
-
-        function copyIP() {
-            navigator.clipboard.writeText("54.36.232.14:25883");
-            alert("IP скопирован")
-        }
-    </script>
+    <script src="./js/scripts.js"></script>
 
     </body>
 </html>

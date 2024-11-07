@@ -4,36 +4,33 @@
 
 @import "default_styles/mixin";
 
-
-.bg {
-    position: relative;
-}
-
-//.title {
-//    margin-top: 14%;
-//    margin-left: 33%;
-//    font-size: 40px;
-//    font-family: "Unbounded", sans-serif;
-//    font-weight: 500;
-//    position: absolute;
-//    z-index: 999;
-//    background: rgba(0, 0, 0, 0.75);
-//    padding: 10px 30px;
-//    border-radius: 10px;
-//    box-shadow: 0 0 20px black;
-//}
-
-.bg-image {
-    border-radius: 20px;
-    width: 100%;
-    box-shadow: 0px 10px 1px -1px rgb(237, 48, 15);
-}
-
-
 .chapter {
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 25px;
+    font-family: "Unbounded", sans-serif;
+}
+
+.stat-info p {
+    margin-bottom: 8px;
+    font-family: "Unbounded", sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.server-online {
+    font-size: 20px;
+
+    & span {
+        color: #acacac;
+    }
+}
+
+.total-server-online {
+    font-size: 23px;
+
+    & span {
+        color: #acacac;
+    }
 }
 
 
@@ -83,21 +80,21 @@
 
 .cases {
     &.active-option {
-        background: rgba(var(--brand-pale-orange-rgb), 0.75) !important;
+        background: rgba(var(--brand-orange-rgb), 0.75) !important;
     }
 
     &:hover {
-        background: rgba(var(--brand-pale-orange-rgb), 0.65) !important;
+        background: rgba(var(--brand-orange-rgb), 0.65) !important;
     }
 }
 
 .preferences {
     &.active-option {
-        background: rgba(var(--brand-pale-red-rgb), 0.75) !important;
+        background: rgba(var(--brand-dark-red-rgb), 0.75) !important;
     }
 
     &:hover {
-        background: rgba(var(--brand-pale-red-rgb), 0.65) !important;
+        background: rgba(var(--brand-dark-red-rgb), 0.65) !important;
     }
 }
 
@@ -138,9 +135,9 @@
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background: rgba(var(--objects-color-rgb), 0.5);
+    background: rgba(var(--brand-red-rgb), 0.06);
     border-radius: 20px;
-    border: 2px solid rgba(var(--brand-red-rgb), 0.24);
+    border: 2px solid rgba(var(--brand-red-rgb), 0.2);
     transition: all 0.7s;
 
     & .product-buttons {
@@ -162,14 +159,9 @@
 }
 
 .discount-product {
-    box-shadow: 0px 0px 35px rgba(var(--brand-red-rgb), 0.3);
-    border: 2px solid rgba(var(--brand-red-rgb), 0.5);
-    background: linear-gradient(
-        295deg,
-        rgba(var(--brand-red-rgb), 0.15),
-        rgba(var(--site-bg-rgb), 0.15),
-        rgba(var(--brand-orange-rgb), 0.15)
-    ) !important;
+    box-shadow: 0px 0px 35px rgba(var(--brand-orange-rgb), 0.3);
+    border: 2px solid rgba(var(--brand-orange-rgb), 0.5);
+    background: rgba(var(--brand-orange-rgb), 0.1);
 
     //&::before {
     //    content: "CКИДКА";
@@ -185,8 +177,27 @@
     //}
 
     &:hover {
-        border: 2px solid rgba(var(--brand-red-rgb), 0.8);
-        box-shadow: 0px 0px 50px rgba(var(--brand-red-rgb), 0.3);
+        border: 2px solid rgba(var(--brand-orange-rgb), 0.8);
+        box-shadow: 0px 0px 50px rgba(var(--brand-orange-rgb), 0.3);
+    }
+
+    & .product-buttons .transparent_button {
+        border: 2px solid rgb(var(--brand-orange-rgb));
+        background: transparent;
+
+        &:hover {
+            border: 2px solid rgba(var(--brand-orange-rgb), 0.6);
+        }
+    }
+
+    & .product-buttons .red_button {
+        border: 2px solid rgb(var(--brand-orange-rgb));
+        background: rgba(var(--brand-orange-rgb), 0.25);
+
+        &:hover {
+            border: 2px solid rgba(var(--brand-orange-rgb), 0.6);
+            background: rgba(var(--brand-orange-rgb), 0.1);
+        }
     }
 }
 
@@ -197,7 +208,7 @@
     width: 100%;
     padding: 12px;
     border-radius: 25px;
-    filter: drop-shadow(0 5px 7px black);
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.55));
 }
 
 .product-info {
@@ -219,48 +230,22 @@
 }
 
 .product-price {
+    background: linear-gradient(90deg, rgb(var(--brand-orange-rgb)), rgb(var(--brand-yellow-rgb)), rgb(var(--brand-orange-rgb)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @include price();
 }
 
 .new-price {
-    background: linear-gradient(160deg, rgb(var(--brand-pale-red-rgb)), rgb(var(--brand-pale-orange-rgb)));
+    background: linear-gradient(160deg, rgb(var(--brand-red-rgb)), rgb(var(--brand-orange-rgb)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include price()
 }
 
 .old-price {
-    @include price(rgb(var(--brand-red-rgb)), 18px, line-through);
+    @include price(rgb(var(--brand-red-rgb)), 16px, line-through);
     margin-top: 5px;
-}
-
-
-.servers-info {
-    z-index: 999;
-    margin-top: 25px;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-    padding: 15px 3%;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.02);
-    border: 2px solid rgba(255,255,255, 0.05);
-    font-family: "Unbounded", sans-serif;
-    font-weight: 400;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    word-break: break-all;
-}
-
-.ip-button {
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: 0px solid transparent;
-    background: linear-gradient(145deg, rgb(var(--brand-red-rgb)), rgb(var(--brand-orange-rgb)));
-    cursor: pointer;
 }
 
 
@@ -283,16 +268,12 @@
         font-size: 20px;
     }
 
-    .product-price {
-        @include price(rgb(var(--brand-orange-rgb)), 18px);
-    }
-
-    .new-price {
-        @include price(rgb(var(--brand-orange-rgb)), 18px)
+    .product-price, .new-price {
+        font-size: 19px;
     }
 
     .old-price {
-        @include price(rgb(var(--brand-red-rgb)), 15px, line-through);
+        font-size: 16px;
     }
 
     .option {
@@ -307,6 +288,14 @@
                     rgba(var(--brand-orange-rgb), 0.25)
         ) !important;
     }
+
+    .server-online {
+        font-size: 15px;
+    }
+
+    .total-server-online {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -317,7 +306,7 @@
     }
 
     .option-name {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .sort-panel {
@@ -327,15 +316,15 @@
 
 @media (max-width: 575px) {
     .product-name {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .product-price, .new-price {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .old-price {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .product-list {

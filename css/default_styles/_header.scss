@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(var(--objects-color-rgb), 0.5);
+    background: rgba(var(--objects-color-rgb), 0.75);
     border-radius: 14px;
     padding: 12px 3%;
     transition: all 0.7s;
@@ -16,10 +16,11 @@ header {
 }
 
 .active-tab {
-    background: rgb(var(--brand-orange-rgb), 0.7);
+    color: rgb(var(--brand-orange-rgb), 1);
+    background: rgb(var(--brand-orange-rgb), 0.25);
 
     &:hover {
-        background: rgba(var(--brand-orange-rgb), 0.55) !important;
+        background: rgba(var(--brand-orange-rgb), 0.17) !important;
     }
 }
 
@@ -41,8 +42,7 @@ header {
         border-radius: 10px;
 
         &:hover {
-            //color: var(--skylight-blue);
-            background: rgba(var(--brand-red-rgb), 0.55);
+            background: rgba(var(--brand-red-rgb), 0.25);
         }
     }
 }
@@ -65,15 +65,70 @@ header {
     margin-right: 6px;
 
     span {
-        padding: 4px 8px;
+        padding-top: 5px;
+        padding-right: 8px;
+        padding-left: 8px;
     }
 }
 
+.lang-menu {
+    cursor: pointer;
+    font-family: "Unbounded", sans-serif;
+}
+
+.lang-menu-langs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(var(--brand-dark-red-rgb));
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    margin-top: 5px;
+}
+
+.lang-menu-title {
+    list-style: none;
+    border-radius: 10px;
+    background: rgb(var(--brand-red-rgb));
+    padding: 5px 12px;
+}
+
+.lang-menu-btn {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 3px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+        background: rgb(var(--brand-orange-rgb));
+    }
+}
+
+.ip-button {
+    padding: 5px 13px;
+    border-radius: 8px;
+    border: 0px solid transparent;
+    background: linear-gradient(145deg, rgb(var(--brand-red-rgb)), rgb(var(--brand-orange-rgb)));
+    cursor: pointer;
+
+    & #ip {
+        font-family: "Unbounded", sans-serif;
+    }
+}
 
 @media (max-width: 767px) {
     #burger-button { display: block; }
     #nav-bar { display: none; }
     header { padding: 10px 1%; }
+    .lang-menu-title { padding: 8px 12px }
+    .ip-button #server-ip { display: none; }
 
     #adap-site-header {
         position: absolute;
