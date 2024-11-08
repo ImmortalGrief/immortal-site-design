@@ -19,8 +19,14 @@ html, body {
   scroll-behavior: smooth;
   scroll-padding-top: 55px;
   line-height: 1.4;
-  background-color: rgb(var(--site-bg-rgb));
   color: var(--text-color);
+}
+
+body {
+  background-image: url(https://pbs.twimg.com/media/E6voPBqX0AgZjwT?format=jpg&name=large), linear-gradient(rgba(0, 0, 0, 0), rgb(var(--site-bg-rgb)));
+  background-position: center top;
+  background-repeat: repeat-x;
+  background-color: rgb(var(--site-bg-rgb));
 }
 
 .container {
@@ -273,7 +279,8 @@ header {
 #nav-links {
   display: flex;
   gap: 5px;
-  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 #nav-links li {
   list-style-type: none;

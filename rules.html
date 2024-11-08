@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>Rules</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/rules.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="box">
+                <header class="site-header">
+                    <div id="adap-site-header">
+                        <ul id="adap-nav-links">
+                            <a href="./index.html">Главная</a>
+                            <a class="active-tab" href="./rules.html">Правила</a>
+                            <a href="./events.html">Ивенты</a>
+                        </ul>
+                    </div>
+                    <a href=""><img src='' alt="server_logo"/></a>
+                    <nav id="nav-bar">
+                        <ul id="nav-links">
+                            <li><a href="./index.html">Главная</a></li>
+                            <li><a class="active-tab" href="./rules.html">Правила</a></li>
+                            <li><a href="./events.html">Ивенты</a></li>
+                        </ul>
+                    </nav>
+                    <div id="header-buttons">
+                        <!-- data-tooltip-bottom="Скопировать IP" -->
+                        <a href="#" data-clipboard-text="mc.immortalgrief.pro" id="ip-button" class="ip-button"><span id="ip">IP</span><span id="server-ip"> mc.immortalgrief.pro</span></a>
+    <!--                    <details class="lang-menu">-->
+    <!--                        <summary class="lang-menu-title">Язык</summary>-->
+    <!--                        <div class="lang-menu-langs">-->
+    <!--                            <button class="lang-menu-btn">English</button>-->
+    <!--                            <button class="lang-menu-btn">Русский</button>-->
+    <!--                        </div>-->
+    <!--                    </details>-->
+                        <button id="burger-button" onclick="toggleAdapHeader()"><span class="material-symbols-outlined">menu</span></button>
+                    </div>
+                </header>
+
+                <main>
+                    <h2 class="rules-title">Общие правила сервера ImmortalGrief:</h2>
+                    <p class="rule-point"><span class="rule-num">1.1</span> Регистрируясь на сервере, вы соглашаетесь со всеми правилами предоставленными в этом списке, правами описанными ниже и обязанностями.</p>
+                    <p class="rule-point"><span class="rule-num">1.2</span> Незнание правил не освобождает от ответственности.</p>
+                    <p class="rule-point"><span class="rule-num">1.3</span> Передача/продажа аккаунтов сторонним лицам строго запрещена.</p>
+                    <p class="rule-point"><span class="rule-num">1.4</span> Администрация оставляет за собой право в одностороннем порядке изменять текущие правила без уведомления пользователей посредством группы VK.</p>
+                    <p class="rule-point"><span class="rule-num">1.5</span> Администрация ведет управление игровыми процессами и всем проектом - исключительно по своему усмотрению.</p>
+                    <p class="rule-point"><span class="rule-num">1.6</span> Так как не всегда удается определить нарушение правил пользователем, окончательное решение остается за Администраторами проекта.</p>
+
+                    <h2 class="rules-title">Права и обязанности игроков:</h2>
+                    <p class="rule-point"><span class="rule-num">2.1</span> Игрок полностью отвечает за надежность своего пароля и доступа к аккаунту.</p>
+                    <p class="rule-point"><span class="rule-num">2.2</span> Игроки, имеющие различные привилегии на сервере, ничем не отличаются от обычных игроков, кроме привилегий и полностью подчиняются правилам проекта.</p>
+                    <p class="rule-point"><span class="rule-num">2.3</span> Только персонал проекта имеет право вызывать игроков на проверку на использование читов.</p>
+                    <p class="rule-point"><span class="rule-num">2.4</span> Игроку строго запрещается любым способом (чат, книги, картинки и др.) распространять информацию, нарушающую законодательство стран СНГ.</p>
+
+                    <h2 class="rules-title">Запреты и наказания:</h2>
+                    <p class="rule-point"><span class="rule-num">3.1</span> Использование или Хранение Чит-клиентов, Чит-Модификаций; <span class="punishment">[Бан на 10 дней, при условии удаления запрещённого ПО]</p>
+                    <p class="rule-point"><span class="rule-num">3.2</span> Обход наказания, выданный модератором/администратором; <span class="punishment">[По решению администрации]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.3</span> Подстрекательство на нарушение правил; <span class="punishment">[Временный мут до 2 часов]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.4</span> Затрагивание семьи в оскорбительной форме - родных, национальности, языка, религий, а также межрасовая-народная рознь; <span class="punishment">[Временный мут до 2 часов]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.5</span> Оскорбление модерации; <span class="punishment">[Временный мут до 3 часов]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.6</span> Флуд, спам, оскорбление игроков, попрошайничество в чате/лс; <span class="punishment">[Временный мут до 30 минут]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.7</span> Передача / Продажа аккаунта сторонним лицам; <span class="punishment">[Перманентный бан аккаунта]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.8</span> Необоснованное наказание игроков;</br>
+                    <span class="punishment">[За <span class="qualification">кик</span> без причины/доказательств - блокировка аккаунта до 2 часов]</br>
+                    [За <span class="qualification">мут</span> без причины/доказательств - блокировка аккаунта до 4 часов]</br>
+                    [За <span class="qualification">бан</span> без причины/доказательств - блокировка аккаунта до 1 дня]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.9</span> Оскорбление проекта/администрации проекта; <span class="punishment">[Блокировка аккаунта до 30 дней. Зависит от контекста]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.10</span> Вводить в заблуждение, администрацию/модерацию проекта (Подделка скриншотов); <span class="punishment">[Блокировка аккаунта до 2 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.11</span> Использование уязвимости сервера (Багов, Дюпов); <span class="punishment">[Бан до 14 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.12</span> Выдача себя за администрацию/модерацию проекта; <span class="punishment">[Блокировка аккаунта до 7 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.13</span> Ставить ники, которые оскорбляют игроков/модерацию/администрацию проекта; <span class="punishment">[Блокировка аккаунта навсегда]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.14</span> Реклама других проектов в любом виде; <span class="punishment">[Блокировка аккаунта навсегда \ по IP]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.15</span> Сделки, связанные с продажей игровых ценностей за реальные деньги; <span class="punishment">[Блокировка аккаунтов навсегда \ по IP]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.16</span> Разбан/размут нарушителя; <span class="punishment">[Блокировка аккаунта на 10 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.17</span> Устанавливать объекты для создания лагов на сервере; <span class="punishment">[Блокировка аккаунта от 7 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.18</span> Многочисленное нарушение правил проекта/вредительство; <span class="punishment">[Блокировка аккаунта от 7 дней до Перманентного \ по IP]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.19</span> Использовать возможности доната в корыстных целях (Спам/флуд командами); <span class="punishment">[Бан на 10 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.20</span> Тим с читером; <span class="punishment">[Бан на 10 дней]</span></p>
+                    <p class="rule-point"><span class="rule-num">3.21</span> Недопустимо намеренное разглашение личной информации, включая адреса, фотографии, данные родителей, IP-адреса и номера телефонов; <span class="punishment">[Предупредительный мут до 1 дня, далее бан до 10 дней]</span></p>
+                </main>
+
+                <footer>
+                    <ul class="footer-pillar">
+                        <a href=""><img height="50" width="280" src="" alt="server_logo"/></a>
+                        <p class="copyright">© 2024 ImmortalGrief — Все права защищены. ImmortalGrief не связан с MojangAB, все средства идут на развитие проекта.</p>
+                    </ul>
+                    <ul class="footer-pillar">
+                        <h3>Ссылки</h3>
+                        <li class="footer-param"><a id="vk-btn" href="">VK</a></li>
+                        <li class="footer-param"><a id="tg-btn" href="">Telegram</a></li>
+                        <li class="footer-param"><a id="yt-btn" href="">YouTube</a></li>
+                        <li class="footer-param"><a id="ds-btn" href="">Discord</a></li>
+                        <li class="footer-param"><a id="da-btn" href="">DonationAlerts</a></li>
+                    </ul>
+                    <ul class="footer-pillar">
+                        <h3>Связь</h3>
+                        <li class="footer-param"><span onclick="">mail@gmail.com</span><span class="material-symbols-outlined">content_copy</span></li>
+                    </ul>
+                    <ul class="footer-pillar">
+                        <h3>Колонна</h3>
+                        <li class="footer-param"><a href="">Аферта</a></li>
+                        <li class="footer-param"><a href="">Аферта</a></li>
+                        <li class="footer-param"><a href="">Аферта</a></li>
+                        <br/>
+                        <li class="footer-param">ИНН: 1212111121</li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+
+        <script src="./js/scripts.js"></script>
+
+    </body>
+</html>

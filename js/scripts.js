@@ -9,7 +9,8 @@ function toggleAdapHeader() {
     if (adap_header) { adap_header.classList.toggle("active-header") }
 }
 
-function copyIP() {
-    navigator.clipboard.writeText("54.36.232.14:25883");
-    alert("IP скопирован")
-}
+
+document.getElementById("ip-button").addEventListener("click", () => {
+    let IP = document.getElementById("ip-button").getAttribute("data-clipboard-text")
+    navigator.clipboard.writeText(IP)
+})

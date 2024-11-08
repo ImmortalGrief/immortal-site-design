@@ -1,0 +1,53 @@
+.rules-title {
+    font-family: "Unbounded", sans-serif;
+    margin-bottom: 5px;
+    font-size: 27px;
+    padding: 8px;
+    background: rgb(255,255,255,0.01);
+    border-radius: 10px;
+    border: 2px solid rgb(255,255,255,0.01);
+
+    &:not(:first-child) {
+        margin-top: 28px;
+    }
+}
+
+.rule-point {
+    font-size: 18px;
+}
+
+.rule-num {
+    //color: rgb(var(--brand-orange-rgb));
+    background: linear-gradient(90deg, rgb(var(--brand-orange-rgb)), rgb(var(--brand-yellow-rgb)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-variant-numeric: tabular-nums;
+    padding-right: 10px;
+}
+
+.punishment {
+    color: rgb(var(--brand-red-rgb));
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.qualification {
+    color: currentColor;
+    border-bottom: 1px solid currentColor;
+}
+
+@media (max-width: 767px) {
+    .rules-title {
+        font-size: 23px;
+    }
+
+    .rule-point {
+        font-size: 15px;
+    }
+
+    .rule-num {
+        padding-right: 5px;
+    }
+}

@@ -68,30 +68,38 @@
 
 .all-products.active-option {
   background: rgba(var(--skylight-blue-rgb), 0.75) !important;
+  box-shadow: 0 0 12px rgba(var(--skylight-blue-rgb), 0.75) !important;
 }
 .all-products:hover {
   background: rgba(var(--skylight-blue-rgb), 0.65) !important;
+  box-shadow: 0 0 7px rgba(var(--skylight-blue-rgb), 0.65) !important;
 }
 
 .cases.active-option {
   background: rgba(var(--brand-orange-rgb), 0.75) !important;
+  box-shadow: 0 0 12px rgba(var(--brand-orange-rgb), 0.75) !important;
 }
 .cases:hover {
   background: rgba(var(--brand-orange-rgb), 0.65) !important;
+  box-shadow: 0 0 7px rgba(var(--brand-orange-rgb), 0.65) !important;
 }
 
 .preferences.active-option {
   background: rgba(var(--brand-dark-red-rgb), 0.75) !important;
+  box-shadow: 0 0 12px rgba(var(--brand-dark-red-rgb), 0.75) !important;
 }
 .preferences:hover {
   background: rgba(var(--brand-dark-red-rgb), 0.65) !important;
+  box-shadow: 0 0 7px rgba(var(--brand-dark-red-rgb), 0.65) !important;
 }
 
 .spawners.active-option {
   background: rgba(var(--purple-rgb), 0.75) !important;
+  box-shadow: 0 0 12px rgba(var(--purple-rgb), 0.75) !important;
 }
 .spawners:hover {
   background: rgba(var(--purple-rgb), 0.65) !important;
+  box-shadow: 0 0 7px rgba(var(--purple-rgb), 0.65) !important;
 }
 
 #search-input {
@@ -213,7 +221,7 @@
 }
 
 .new-price {
-  background: linear-gradient(160deg, rgb(var(--brand-red-rgb)), rgb(var(--brand-orange-rgb)));
+  background: linear-gradient(145deg, rgb(var(--brand-red-rgb)), rgb(var(--brand-orange-rgb)));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 22px;
@@ -269,9 +277,6 @@
   }
   .option {
     font-size: 17px;
-  }
-  .discount-product {
-    background: linear-gradient(325deg, rgba(var(--brand-red-rgb), 0.25), rgba(var(--site-bg-rgb), 0.25), rgba(var(--brand-orange-rgb), 0.25)) !important;
   }
   .server-online {
     font-size: 15px;
