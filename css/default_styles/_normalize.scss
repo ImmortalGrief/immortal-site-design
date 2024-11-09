@@ -22,13 +22,24 @@ html, body {
 }
 
 body {
-    background-image:
-            url(https://pbs.twimg.com/media/E6voPBqX0AgZjwT?format=jpg&name=large),
-            linear-gradient(rgba(0,0,0,0), rgb(var(--site-bg-rgb)))
-    ;
-    background-position: center top;
-    background-repeat: repeat-x;
+    position: relative;
+    background-image: url(../../img/png/bg_img.jpg);
     background-color: rgb(var(--site-bg-rgb));
+    background-position: center top;
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+    background-size: cover; /* Изображение будет покрывать весь экран */
+
+    &::before {
+        content: '';
+        position: absolute; /* Позиционируем псевдоэлемент абсолютно */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba(0,0,0,0.25), rgb(var(--site-bg-rgb), 1)); /* Затемняющий слой с прозрачностью */
+        pointer-events: none; /* Позволяет взаимодействовать с элементами под псевдоэлементом */
+        z-index: -1;
+    }
 }
 
 .container {
