@@ -342,24 +342,6 @@
     }
 }
 
-.close-modal-btn {
-    background: transparent;
-    border: none;
-    position: absolute;
-    transform: translateX(-35%) translateY(-35%);
-}
-
-.close-modal-btn-icon {
-    padding: 7px;
-    background: rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    transition: color 0.4s;
-
-    &:hover {
-        color: rgb(var(--brand-red-rgb));
-    }
-}
-
 @media (max-width: 767px) {
     .product-list {
         gap: 8px;

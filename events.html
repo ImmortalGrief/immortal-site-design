@@ -36,23 +36,43 @@
             </header>
 
             <main>
+
+                <!-- Модальное окно для ивента -->
+                <dialog class="event-modal no-display" id="nether-plate-modal">
+                    <button class="close-modal-btn" id="close-nether-plate-modal-btn"><span class="close-modal-btn-icon material-symbols-outlined">close</span></button>
+                    <div class="event-modal-info">
+                        <img src="./img/png/nether_plate.png" class="event-modal-img" alt="nether_plate" />
+                        <h1 class="event-modal-title">Незер-плита</h1>
+                        <div class="event-modal-about-event">
+                            <p class="event-modal-about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis deserunt dolorem, doloremque eligendi esse et incidunt ipsa ipsam iste labore laudantium nam obcaecati omnis possimus quaerat quas sit velit. A architecto cumque debitis delectus eos explicabo illo libero necessitatibus nobis numquam officia quasi velit, veniam! Aperiam delectus ducimus eum excepturi, ipsum labore, nemo placeat quae, quaerat quam sed ut.</p>
+                        </div>
+                        <div class="event-modal-spawn-conditions">
+                            <h2 class="event-modal-conditions-title">Условия появления:</h2>
+                            <ul class="event-modal-conditions-list">
+                                <li class="event-modal-conditions-point">20 человек онлайн на сервере.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </dialog>
+                <!--  -->
+
                 <div class="blured-img">
                     <img src="./img/png/events.jpg" alt="bg" class="base-image" />
                     <img src="./img/png/events.jpg" alt="blur-img" class="image-blured" />
                 </div>
                 <ul class="events-list">
-                    <li class="event"><a href="">
+                    <li class="event"><a id="nether-plate-open-modal">
                         <h3 class="event-name">Незер-плита</h3>
                         <img class="event-img" src="./img/png/nether_plate.png" alt="event-img">
                     </a></li>
-                    <li class="event"><a href="">
+                    <li class="event">
                         <h3 class="event-name">Гриф поршнями</h3>
                         <img class="event-img" src="./img/png/nether_plate.png" alt="event-img">
-                    </a></li>
-                    <li class="event"><a href="">
+                    </li>
+                    <li class="event">
                         <h3 class="event-name">Сундук Иммортала</h3>
                         <img class="event-img" src="./img/png/nether_plate.png" alt="event-img">
-                    </a></li>
+                    </li>
                 </ul>
             </main>
 
@@ -86,6 +106,7 @@
     </div>
 
     <script src="./js/scripts.js"></script>
+    <script src="./js/open_events_modals.js"></script>
 
     </body>
 </html>

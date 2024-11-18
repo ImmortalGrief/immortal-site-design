@@ -509,6 +509,24 @@ header {
   box-shadow: 0 0 8px rgba(var(--brand-orange-rgb), 0.75);
 }
 
+.close-modal-btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  transform: translateX(-35%) translateY(-35%);
+  cursor: pointer;
+}
+
+.close-modal-btn-icon {
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  transition: color 0.4s;
+}
+.close-modal-btn-icon:hover {
+  color: rgb(var(--brand-red-rgb));
+}
+
 .no-display {
   position: absolute !important;
   width: 1px !important;

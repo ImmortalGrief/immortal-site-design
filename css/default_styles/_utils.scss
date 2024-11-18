@@ -52,6 +52,25 @@
 
 }
 
+.close-modal-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    transform: translateX(-35%) translateY(-35%);
+    cursor: pointer;
+}
+
+.close-modal-btn-icon {
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    transition: color 0.4s;
+
+    &:hover {
+        color: rgb(var(--brand-red-rgb));
+    }
+}
+
 .no-display {
     position: absolute !important;
     width: 1px !important;
@@ -74,7 +93,6 @@
     z-index: 110;
 
     summary {
-        //background-color: rgba(var(--brand-red-rgb), 1);
         background: linear-gradient(90deg, rgb(var(--brand-red-rgb), 1), rgb(var(--brand-dark-red-rgb), 0.5), rgb(var(--brand-red-rgb), 1));
         color: white;
         font-size: 18px;

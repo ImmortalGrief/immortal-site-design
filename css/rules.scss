@@ -42,6 +42,39 @@
     background: rgba(0, 0, 0, 0.55);
     padding: 7px;
     border-radius: 12px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.rules-menu {
+    border-radius: 10px !important;
+    border: 2px solid rgba(var(--brand-red-rgb), 0.5);
+    overflow: hidden;
+    padding: .4rem .4rem 0;
+    background: rgb(var(--brand-red-rgb), 0.5);
+    z-index: 110;
+
+    summary {
+        background: rgb(var(--brand-red-rgb), 0);
+        color: white;
+        font-size: 18px;
+        margin: -.4rem -.4rem 0;
+        padding: .4rem .7rem;
+        border-radius: 0;
+        transition: background-color 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(var(--brand-red-rgb), 0.45);
+        }
+    }
+}
+.rules-menu[open] {
+    padding: 0.4rem;
+
+    summary {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 767px) {

@@ -48,13 +48,73 @@
   object-fit: cover;
 }
 
+.event-modal {
+  display: flex;
+  width: 650px;
+  margin: auto;
+  padding: 24px;
+  background-color: rgba(var(--brand-red-rgb), 0.1);
+  border-radius: 13px;
+  border: 2px solid rgba(var(--brand-red-rgb), 0.15);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--text-color);
+  word-break: break-word;
+}
+.event-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.event-modal-title {
+  font-family: "Unbounded", sans-serif;
+  margin-bottom: 5px;
+}
+
+.event-modal-conditions-title {
+  font-family: "Unbounded", sans-serif;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.event-modal-about-event {
+  margin-bottom: 15px;
+  max-height: 265px;
+  overflow-y: auto;
+}
+
+.event-modal-conditions-point {
+  list-style: "- ";
+  margin-left: 15px;
+}
+
+.event-modal-img {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 767px) {
   .blured-img {
     margin: 0;
     width: 100%;
   }
+  .event-modal {
+    padding: 17px;
+  }
   .events-list {
     width: 100%;
+  }
+  .event-modal-title {
+    font-size: 19px;
+  }
+  .event-modal-conditions-title {
+    font-size: 17px;
+  }
+  .event-modal-about-event,
+  .event-modal-conditions-point {
+    font-size: 15px;
   }
 }
 
