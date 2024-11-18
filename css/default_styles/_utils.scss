@@ -74,7 +74,8 @@
     z-index: 110;
 
     summary {
-        background-color: rgba(var(--brand-red-rgb), 1);
+        //background-color: rgba(var(--brand-red-rgb), 1);
+        background: linear-gradient(90deg, rgb(var(--brand-red-rgb), 1), rgb(var(--brand-dark-red-rgb), 0.5), rgb(var(--brand-red-rgb), 1));
         color: white;
         font-size: 18px;
         margin: -.4rem -.4rem 0;

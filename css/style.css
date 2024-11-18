@@ -230,7 +230,7 @@ footer {
 }
 .footer-pillar li a:hover {
   transform: translateY(-1px) translateX(-2px);
-  background: rgba(var(--brand-red-rgb));
+  background: linear-gradient(90deg, rgba(var(--brand-red-rgb)), rgba(var(--brand-dark-red-rgb)));
 }
 .footer-pillar .material-symbols-outlined {
   font-size: 16px;
@@ -239,8 +239,16 @@ footer {
   position: relative;
 }
 
+#mail {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+#mail:hover {
+  color: rgb(var(--brand-red-rgb));
+}
+
 .copyright {
-  max-width: 240px;
+  max-width: 250px;
   font-size: 14px;
 }
 
@@ -523,7 +531,7 @@ header {
   z-index: 110;
 }
 .stat-info summary {
-  background-color: rgba(var(--brand-red-rgb), 1);
+  background: linear-gradient(90deg, rgb(var(--brand-red-rgb), 1), rgb(var(--brand-dark-red-rgb), 0.5), rgb(var(--brand-red-rgb), 1));
   color: white;
   font-size: 18px;
   margin: -0.4rem -0.4rem 0;

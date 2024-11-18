@@ -2,10 +2,10 @@
     font-family: "Unbounded", sans-serif;
     margin-bottom: 5px;
     font-size: 27px;
-    padding: 8px;
-    background: rgb(255,255,255,0.01);
-    border-radius: 10px;
-    border: 2px solid rgb(255,255,255,0.01);
+    //padding: 8px;
+    //background: rgb(255,255,255,0.01);
+    //border-radius: 10px;
+    //border: 2px solid rgb(255,255,255,0.01);
 
     &:not(:first-child) {
         margin-top: 28px;
@@ -36,6 +36,12 @@
 .qualification {
     color: currentColor;
     border-bottom: 1px solid currentColor;
+}
+
+.block-of-rules {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 7px;
+    border-radius: 12px;
 }
 
 @media (max-width: 767px) {

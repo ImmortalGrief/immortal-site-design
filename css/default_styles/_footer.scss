@@ -36,7 +36,7 @@ footer {
 
         &:hover {
             transform: translateY(-1px) translateX(-2px);
-            background: rgba(var(--brand-red-rgb));
+            background: linear-gradient(90deg, rgba(var(--brand-red-rgb)), rgba(var(--brand-dark-red-rgb)));
         }
     }
 
@@ -48,8 +48,17 @@ footer {
     }
 }
 
+#mail {
+    transition: all 0.25s;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(var(--brand-red-rgb));
+    }
+}
+
 .copyright {
-    max-width: 240px;
+    max-width: 250px; // 240
     font-size: 14px;
 }
 

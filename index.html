@@ -31,7 +31,7 @@
                 </nav>
                 <div id="header-buttons">
                     <!-- data-tooltip-bottom="Скопировать IP" -->
-                    <a data-clipboard-text="mc.immortalgrief.pro" id="ip-button" class="ip-button"><span id="ip">IP</span><span id="server-ip"> mc.immortalgrief.pro</span></a>
+                    <button data-clipboard-text="mc.immortalgrief.pro" id="ip-button" class="ip-button"><span id="ip">IP</span><span id="server-ip"> mc.immortalgrief.pro</span></button>
 <!--                    <details class="lang-menu">-->
 <!--                        <summary class="lang-menu-title">Язык</summary>-->
 <!--                        <div class="lang-menu-langs">-->
@@ -72,6 +72,41 @@
                         <p class="option-name">Спавнера</p>
                     </div>
                 </div>
+
+                <!-- Модального окно для привилегии -->
+                <dialog class="product-modal no-display" id="hero-modal">
+                    <button class="close-modal-btn" id="close-hero-modal-btn"><span class="close-modal-btn-icon material-symbols-outlined">close</span></button>
+                    <div class="product-modal-left-info">
+                        <img src="./img/png/server.png" class="product-modal-img" alt="hero_icon" />
+                        <p class="product-price">249</p>
+                        <div class="product-modal-buttons">
+                            <input placeholder="Введите никнейм" required id="hero-nickname-input" class="product-modal-input" />
+                            <input placeholder="Введите свою почту" required id="hero-email-input" class="product-modal-input" />
+                            <button id="buy-hero-btn" class="red_button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product-modal-right-info">
+                        <h1 class="product-modal-title">HERO</h1>
+                        <div class="product-modal-information">
+                            <p class="product-modal-p">Доступные команды:</p>
+                            <p class="product-modal-p">Получение набора привелегии - /kit HERO</p>
+                            <p class="product-modal-p">Просмотр содержимого наборов - /kit</p>
+                            <p class="product-modal-p">Создание своего клана - /clan</p>
+                            <p class="product-modal-p">Телепорт на случайные дальние координаты - /rtp far</p>
+                            <p class="product-modal-p">Просмотр инвентаря игрока - /invsee</p>
+                            <p class="product-modal-p">Просмотр баланса игрока - /balance <никнейм></p>
+                            <p class="product-modal-p">+ Возможности предыдущей привилегии.</p>
+                            </br>
+                            <p class="product-modal-p">Доп. возможности:</p>
+                            <p class="product-modal-p">Количество точек дома: 3</p>
+                            <p class="product-modal-p">Количество регионов: 4</p>
+                            <p class="product-modal-p">Количество слотов аукциона: 5</p>
+                            <p class="product-modal-p">Количество блоков привата за раз: 32,000</p>
+                        </div>
+                    </div>
+                </dialog>
+                <!--  -->
+
                 <ul class="product-list">
                     <li class="product">
                         <img src="./img/png/server.png" class="product-img" alt="vip_icon" />
@@ -82,7 +117,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -94,7 +128,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -105,8 +138,7 @@
                             <p class="product-type no-display">donate</p>
                         </div>
                         <div class="product-buttons">
-                            <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
+                            <button class="red_button" id="open-hero-modal">Посмотреть</button>
                         </div>
                     </li>
                     <li class="product">
@@ -118,7 +150,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -130,7 +161,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -142,7 +172,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -154,7 +183,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -166,7 +194,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -178,7 +205,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product discount-product">
@@ -193,7 +219,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -205,7 +230,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                     <li class="product">
@@ -217,7 +241,6 @@
                         </div>
                         <div class="product-buttons">
                             <button class="red_button">Посмотреть</button>
-<!--                            <button class="transparent_button">Купить</button>-->
                         </div>
                     </li>
                 </ul>
@@ -238,7 +261,7 @@
                 </ul>
                 <ul class="footer-pillar">
                     <h3>Связь</h3>
-                    <li class="footer-param"><span onclick="">mail@gmail.com</span><span class="material-symbols-outlined">content_copy</span></li>
+                    <li class="footer-param"><span data-clipboard-text="mail@gmail.com" id="mail">mail@gmail.com</span><span class="material-symbols-outlined">content_copy</span></li>
                 </ul>
                 <ul class="footer-pillar">
                     <h3>Колонна</h3>
@@ -252,6 +275,7 @@
         </div>
     </div>
 
+    <script src="./js/open_product_modals.js"></script>
     <script src="./js/scripts.js"></script>
 
     </body>
